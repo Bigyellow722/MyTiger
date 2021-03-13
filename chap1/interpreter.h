@@ -16,14 +16,6 @@ struct IntAndTable {
 };
 
 
-
-Table_ interpStm(A_stm s, Table_ t);
-
-Table_ interpExp(A_exp exp, Table_ t);
-
-Table_ update(Table_ t, string c, int value);
-
 void interp(A_stm stm);
-
 
 #endif

@@ -4,6 +4,7 @@
 #include "util.h"
 #include "slp.h"
 #include "prog1.h"
+#include "interpreter.h"
 
 int maxargs(A_stm stm);
 int maxargs_exp(A_exp exp);
@@ -64,5 +65,7 @@ int main(void) {
 	A_stm tmp = prog();
 	int res = maxargs(tmp);
 	printf("%d\n",res);
+	printf("begin:\n");
+	interp(tmp);
 	return 0;
 }
